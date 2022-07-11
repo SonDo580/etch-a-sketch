@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.row {
+    flex-grow: 1;
+    display: flex;
+}
+
+.block {
+    border: 2px solid black;
+    flex: 1;
+    height: ;
+}
