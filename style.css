@@ -25,3 +25,11 @@ body {
 .block:hover {
     background-color: yellow;
 }
+
+button {
+    background-color: yellow;
+    color: blue;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
