@@ -13,3 +13,6 @@ for (let i = 0; i < 16; i++) {
 
     container.appendChild(row);
 }
+
+const button = document.querySelector('button');
+button.addEventListener('click', askInput);
