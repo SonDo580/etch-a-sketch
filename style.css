@@ -18,3 +18,7 @@ body {
     border: 2px solid black;
     flex: 1;
 }
+
+.block:hover {
+    background-color: yellow;
+}
