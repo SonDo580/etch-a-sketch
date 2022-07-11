@@ -15,4 +15,8 @@ for (let i = 0; i < 16; i++) {
 }
 
 const button = document.querySelector('button');
-button.addEventListener('click', askInput);
+button.addEventListener('click', changeGrid);
+
+function changeGrid() {
+    let input = prompt('Enter the number of squares per side (n <= 100)')
+}
