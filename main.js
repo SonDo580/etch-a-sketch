@@ -59,3 +59,8 @@ function removeGrid() {
         container.removeChild(row);
     }
 }
+
+function changeBlock(e) {
+    const block = e.srcElement;
+    block.classList.add('block-hover');
+}
