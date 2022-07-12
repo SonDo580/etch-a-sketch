@@ -19,7 +19,6 @@ button.addEventListener('click', changeGrid);
 
 function changeGrid() {
     let squaresPerSide = getInput();
-
     removeCurrentGrid();
 }
 
@@ -48,4 +47,8 @@ function getInput() {
 }
 
 function removeCurrentGrid() {
+    const rows = document.querySelectorAll('.row');
+    for (const row of rows) {
+        container.removeChild(row);
+    }
 }
