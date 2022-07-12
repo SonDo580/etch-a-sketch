@@ -65,6 +65,16 @@ function changeBlock(e) {
     block.style.backgroundColor = 'yellow';
 }
 
+function getRandomRGB() {
+    const rgbValue = [];
+
+    for (let i = 1; i <= 3; i++) {
+        rgbValue.push(getRandomInt(0, 255));
+    }
+
+    return `rgb(${rgbValue})`;
+}
+
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
