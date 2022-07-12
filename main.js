@@ -62,5 +62,5 @@ function removeGrid() {
 
 function changeBlock(e) {
     const block = e.srcElement;
-    block.classList.add('block-hover');
+    block.style.backgroundColor = 'yellow';
 }
