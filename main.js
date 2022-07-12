@@ -1,23 +1,26 @@
 const container = document.querySelector('.container');
 let squaresPerSide = 16;
 
-function createGrid()
-for (let i = 0; i < squaresPerSide; i++) {
-    const row = document.createElement('div');
-    row.classList.add('row');
-
-    for (let j = 0; j < squaresPerSide; j++) {
-        const block = document.createElement('div');
-        block.classList.add('block');
-
-        row.appendChild(block);
-    }
-
-    container.appendChild(row);
-}
-
 const button = document.querySelector('button');
 button.addEventListener('click', changeGrid);
+
+
+
+function createGrid(squaresPerSide) {
+    for (let i = 0; i < squaresPerSide; i++) {
+        const row = document.createElement('div');
+        row.classList.add('row');
+    
+        for (let j = 0; j < squaresPerSide; j++) {
+            const block = document.createElement('div');
+            block.classList.add('block');
+    
+            row.appendChild(block);
+        }
+    
+        container.appendChild(row);
+    }
+}
 
 function changeGrid() {
     let squaresPerSide = getInput();
