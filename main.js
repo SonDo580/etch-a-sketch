@@ -4,7 +4,7 @@ let squaresPerSide = 16;
 const button = document.querySelector('button');
 button.addEventListener('click', changeGrid);
 
-
+createGrid(squaresPerSide);
 
 function createGrid(squaresPerSide) {
     for (let i = 0; i < squaresPerSide; i++) {
