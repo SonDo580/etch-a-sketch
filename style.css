@@ -22,7 +22,7 @@ body {
     flex: 1;
 }
 
-.block:hover {
+.block-hover {
     background-color: yellow;
 }
 
