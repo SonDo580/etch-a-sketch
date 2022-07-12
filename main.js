@@ -1,4 +1,5 @@
 const container = document.querySelector('.container');
+let squaresPerSide = 16;
 
 for (let i = 0; i < 16; i++) {
     const row = document.createElement('div');
