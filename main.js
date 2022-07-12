@@ -82,5 +82,6 @@ function getRandomInt(min, max) {
 }
 
 function toNormalBlock(e) {
-    console.log(e.target);
+    const block = e.target;
+    block.style.backgroundColor = '';
 }
