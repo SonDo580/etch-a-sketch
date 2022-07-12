@@ -63,7 +63,7 @@ function removeGrid() {
 }
 
 function changeBlock(e) {
-    const block = e.srcElement;
+    const block = e.target;
     block.style.backgroundColor = getRandomRGB();
 }
 
@@ -79,4 +79,8 @@ function getRandomRGB() {
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function toNormalBlock(e) {
+    console.log(e.target);
 }
