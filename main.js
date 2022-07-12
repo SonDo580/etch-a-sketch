@@ -16,7 +16,7 @@ function createGrid(squaresPerSide) {
             block.classList.add('block');
 
             block.addEventListener('mouseover', changeBlock);
-            block.addEventListener('transitionend', removeTransition);
+            block.addEventListener('mouseout', toNormalBlock);
     
             row.appendChild(block);
         }
