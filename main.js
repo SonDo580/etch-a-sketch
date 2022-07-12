@@ -1,11 +1,12 @@
 const container = document.querySelector('.container');
 let squaresPerSide = 16;
 
-for (let i = 0; i < 16; i++) {
+function createGrid()
+for (let i = 0; i < squaresPerSide; i++) {
     const row = document.createElement('div');
     row.classList.add('row');
 
-    for (let j = 0; j < 16; j++) {
+    for (let j = 0; j < squaresPerSide; j++) {
         const block = document.createElement('div');
         block.classList.add('block');
 
@@ -47,7 +48,7 @@ function getInput() {
     }
 }
 
-function removeCurrentGrid() {
+function removeGrid() {
     const rows = document.querySelectorAll('.row');
     for (const row of rows) {
         container.removeChild(row);
