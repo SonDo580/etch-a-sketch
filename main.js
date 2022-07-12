@@ -62,7 +62,7 @@ function removeGrid() {
 
 function changeBlock(e) {
     const block = e.srcElement;
-    block.style.backgroundColor = 'yellow';
+    block.style.backgroundColor = getRandomRGB();
 }
 
 function getRandomRGB() {
