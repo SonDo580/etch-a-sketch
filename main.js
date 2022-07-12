@@ -23,8 +23,9 @@ function createGrid(squaresPerSide) {
 }
 
 function changeGrid() {
-    let squaresPerSide = getInput();
+    squaresPerSide = getInput();
     removeCurrentGrid();
+    createGrid(squaresPerSide);
 }
 
 function getInput() {
