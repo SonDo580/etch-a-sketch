@@ -64,3 +64,7 @@ function changeBlock(e) {
     const block = e.srcElement;
     block.style.backgroundColor = 'yellow';
 }
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
