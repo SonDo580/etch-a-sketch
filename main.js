@@ -14,7 +14,9 @@ function createGrid(squaresPerSide) {
         for (let j = 0; j < squaresPerSide; j++) {
             const block = document.createElement('div');
             block.classList.add('block');
+
             block.addEventListener('mouseover', changeBlock);
+            block.addEventListener('transitionend', removeTransition);
     
             row.appendChild(block);
         }
